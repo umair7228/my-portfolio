@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: font1;
+  src: url(../../public/fonts/font1.woff2);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../../public/fonts/font2.woff2);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(../../public/fonts/font3.woff2);
+}
+
+@font-face {
+  font-family: font4;
+  src: url(../../public/fonts/font4.woff2);
+}
+
+@font-face {
+  font-family: font5;
+  src: url(../../public/fonts/font5.woff2);
+}
+
+@font-face {
+  font-family: font6;
+  src: url(../../public/fonts/font6.woff2);
+}
+
+
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 27 27 27;
+    --foreground: 225 225 225;
+    --muted: 115 115 115;
+    --accent: 254 254 91;
+    /* hex value of rgb(254,254,91) color is  #FEFE5B  */
+  }
+}
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+  .custom-bg {
+    @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
+
+
+
+
+/* src/app/globals.css */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
