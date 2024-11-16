@@ -3,8 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import umair from "../../../../public/home-image/umair-gray.png";
 import { motion } from "framer-motion";
-import Title from "@/app/(sub pages)/home/Title";
-import Buttons from "./buttons";
+import Title from "./Title";
+import Buttons from "./Buttons";
 
 const HomePage = () => {
   const [triggerAnimation, setTriggerAnimation] = useState(false);
