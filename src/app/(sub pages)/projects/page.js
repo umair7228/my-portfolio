@@ -3,7 +3,7 @@ import bg from "../../../../public/background/projects-background.png"
 import SectionLayout from "../../components/projects-sections/sectionLayout";
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col items-center -z-10 relative">
+    <main className="flex min-h-screen flex-col items-center justify-center -z-10 relative">
       <Image
         src={bg}
         alt="background-image"

@@ -29,7 +29,7 @@ const HomePage = () => {
           initial={{ opacity: 0, x: 400, rotateY: 45 }}
           animate={{ opacity: 1, x: 0, rotateY: 0 }}
           transition={{ duration: 0.7, ease: "circOut", delay: 0.7 }}
-          className="w-[60%] sm:w-[50%] md:w-[40%] lg:w-[35%]"
+          className="w-[55%] sm:w-[50%] md:w-[40%] lg:w-[35%]"
           onAnimationComplete={() => setTriggerAnimation(true)} 
         >
           <Image

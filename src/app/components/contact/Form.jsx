@@ -65,7 +65,7 @@ export default function Form() {
         type="text"
         placeholder="name"
         {...register("name", { required: 'This field is required & and not be less than 3 characters.', maxLength: 80 })}
-        className="xs:w-[80%] md:w-full p-2 rounded-[8px] shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+        className="w-full p-2 rounded-[8px] shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
       />
       {
         errors.name && <span className="inline-block self-start text-accent">{errors.name.message}</span>
@@ -75,7 +75,7 @@ export default function Form() {
         type="email"
         placeholder="email"
         {...register("email", { required: 'This field is required', pattern: /^\S+@\S+$/i })}
-        className="xs:w-[80%] md:w-full p-2 rounded-[8px] shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+        className="w-full p-2 rounded-[8px] shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
       />
 
       {
@@ -86,7 +86,7 @@ export default function Form() {
         placeholder="message"
         rows={5}
         {...register("Message", { required: 'This field should not be empty and should be more than 50 characters and less than 1000 characters.', max: 1000, min: 50 })}
-        className="xs:w-[80%] md:w-full p-2 rounded-[8px] shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+        className="w-full p-2 rounded-[8px] shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
       />
 
       {
@@ -95,14 +95,14 @@ export default function Form() {
 
       <input
         value={"Cast Your Message"}
-        className="xs:text-sm sm:text-xl xs:px-6 xs:py-2 md:px-10 md:py-4 rounded-[8px] xs:font-normal md:font-bold hover:custom-bg hover:text-accent/90 duration-150 shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop:blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize"
+        className="text-sm sm:text-xl px-6 py-2 md:px-10 md:py-4 rounded-[8px] font-normal md:font-bold hover:custom-bg hover:text-accent/90 duration-150 shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop:blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize"
         type="submit"
       />
     </form>
 
-      <div className="custom-bg px-10 py-2 rounded-xl">
-            <p>If the contact form isn&#39;t working, please feel free to reach out via email.</p>
-            <h2 className="text-accent">Email: umairnawaz7228@gmail.com</h2>
+      <div className="custom-bg px-4 sm:px-6 lg:px-10 py-2 rounded-xl">
+            <p className="text-xs sm:text-sm lg:text-lg">If the contact form isn&#39;t working, please feel free to reach out via email.</p>
+            <h2 className="text-accent text-xs sm:text-sm lg:text-lg">Email: umairnawaz7228@gmail.com</h2>
       </div>
 
     </>
