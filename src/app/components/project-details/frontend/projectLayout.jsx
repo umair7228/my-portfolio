@@ -30,10 +30,10 @@ const FrontendLayout = () => {
 
       {/* boxes */}
       <ItemLayout>
-        {/* project 1 */}
+        {/* project 8 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 h-full text-start hover:scale-105 duration-150 p-4 rounded-xl custom-bg"
+          className="relative col-span-3 flex flex-col gap-3 h-full text-start hover:scale-105 duration-150 p-4 pb-16 rounded-xl custom-bg"
         >
           {/* image */}
           <Image
@@ -48,7 +48,7 @@ const FrontendLayout = () => {
           <p className="text-muted select-none pointer-events-none">
             {frontendProjects.dashboardProject.description}
           </p>
-          <div className="absolute bottom-4 w-full">
+          <div className="absolute bottom-4 w-[92%] flex flex-col gap-3 ">
             <Link
               href={frontendProjects.dashboardProject.demoLink}
               target="_blank"
@@ -57,7 +57,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className=" text-foreground select-none px-4 py-2  rounded-xl custom-bg"
+                className=" text-foreground select-none py-2 w-full rounded-xl custom-bg"
               >
                 Details
               </motion.button>
@@ -70,7 +70,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="absolute right-7 text-foreground select-none px-4 py-2 rounded-xl custom-bg"
+                className=" text-foreground select-none py-2 w-full rounded-xl custom-bg"
               >
                 Click For A Live Version
               </motion.button>
@@ -78,10 +78,10 @@ const FrontendLayout = () => {
           </div>
         </motion.div>
 
-        {/* project 2 */}
+        {/* project 7 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
+          className="relative col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
         >
           {/* image */}
           <Image
@@ -96,7 +96,8 @@ const FrontendLayout = () => {
           <p className="text-muted select-none pointer-events-none">
             {frontendProjects.amazonProject.description}
           </p>
-          <div className="absolute bottom-4 w-full">
+          
+          <div className="absolute bottom-4 w-[92%] flex flex-col gap-3">
             <Link
               href={frontendProjects.amazonProject.demoLink}
               target="_blank"
@@ -105,11 +106,12 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className=" text-foreground select-none custom-bg px-4 py-2  rounded-xl  "
+                className=" text-foreground select-none custom-bg py-2 w-full rounded-xl  "
               >
                 Details
               </motion.button>
             </Link>
+
             <Link
               href={"https://umair7228.github.io/Amazon-Clone/"}
               target="_blank"
@@ -118,18 +120,20 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="absolute right-7 text-foreground select-none custom-bg px-4 py-2 rounded-xl  "
+                className="text-foreground select-none custom-bg py-2 w-full rounded-xl  "
               >
                 Click For A Live Version
               </motion.button>
             </Link>
+            
           </div>
+          
         </motion.div>
 
-        {/* project 3 */}
+        {/* project 6 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
+          className="relative col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
         >
           {/* image */}
           <Image
@@ -144,7 +148,7 @@ const FrontendLayout = () => {
           <p className="text-muted select-none pointer-events-none">
             {frontendProjects.portfolioWeb.description}
           </p>
-          <div className="absolute bottom-4 w-full">
+          <div className="absolute bottom-4 w-[92%] flex flex-col gap-3">
             <Link
               href={frontendProjects.portfolioWeb.demoLink}
               target="_blank"
@@ -153,7 +157,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="text-foreground select-none px-4 py-2 custom-bg rounded-xl  "
+                className="text-foreground select-none w-full py-2 custom-bg rounded-xl"
               >
                 Details
               </motion.button>
@@ -166,7 +170,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="absolute right-7 text-foreground select-none custom-bg px-4 py-2 rounded-xl  "
+                className="text-foreground select-none custom-bg w-full py-2 rounded-xl  "
               >
                 Click For A Live Version
               </motion.button>
@@ -174,10 +178,10 @@ const FrontendLayout = () => {
           </div>
         </motion.div>
 
-        {/* project 4 */}
+        {/* project 5 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
+          className="relative col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
         >
           {/* image */}
           <Image
@@ -192,7 +196,7 @@ const FrontendLayout = () => {
           <p className="text-muted select-none pointer-events-none">
             {frontendProjects.editableResume.description}
           </p>
-          <div className="absolute bottom-4 w-full ">
+          <div className="absolute bottom-4 w-[92%] flex flex-col gap-3">
             <Link
               href={frontendProjects.editableResume.demoLink}
               target="_blank"
@@ -201,7 +205,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="text-foreground select-none custom-bg px-4 py-2 rounded-xl  "
+                className="text-foreground select-none custom-bg w-full py-2 rounded-xl  "
               >
                 Details
               </motion.button>
@@ -214,7 +218,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="absolute right-7 text-foreground select-none px-4 py-2 custom-bg rounded-xl  "
+                className="text-foreground select-none w-full py-2 custom-bg rounded-xl  "
               >
                 Click For A Live Version
               </motion.button>
@@ -222,10 +226,10 @@ const FrontendLayout = () => {
           </div>
         </motion.div>
 
-        {/* project 5 */}
+        {/* project 4 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 h-[489.16px] text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
+          className="relative col-span-3 flex flex-col gap-3 h-[489.16px] text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
         >
           {/* image */}
           <Image
@@ -240,7 +244,7 @@ const FrontendLayout = () => {
           <p className="text-muted select-none pointer-events-none">
             {frontendProjects.todoList.description}
           </p>
-          <div className="absolute bottom-4 w-full">
+          <div className="absolute bottom-4 w-[92%] flex flex-col gap-3">
             <Link
               href={frontendProjects.todoList.demoLink}
               target="_blank"
@@ -249,7 +253,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="text-foreground select-none  px-4 py-2 custom-bg rounded-xl  "
+                className="text-foreground select-none  w-full py-2 custom-bg rounded-xl  "
               >
                 Details
               </motion.button>
@@ -262,7 +266,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="absolute right-7 text-foreground select-none  px-4 py-2 custom-bg rounded-xl  "
+                className="text-foreground select-none w-full py-2 custom-bg rounded-xl  "
               >
                 Click For A Live Version
               </motion.button>
@@ -270,10 +274,10 @@ const FrontendLayout = () => {
           </div>
         </motion.div>
 
-        {/* project 6 */}
+        {/* project 3 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
+          className="relative col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
         >
           {/* image */}
           <Image
@@ -288,7 +292,7 @@ const FrontendLayout = () => {
           <p className="text-muted select-none pointer-events-none">
             {frontendProjects.docsManagement.description}
           </p>
-          <div className="absolute bottom-4 w-full">
+          <div className="absolute bottom-4 w-[92%] flex flex-col gap-3">
             <Link
               href={frontendProjects.docsManagement.demoLink}
               target="_blank"
@@ -297,7 +301,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="text-foreground select-none  px-4 py-2 custom-bg rounded-xl  "
+                className="text-foreground select-none  w-full py-2 custom-bg rounded-xl  "
               >
                 Details
               </motion.button>
@@ -310,7 +314,7 @@ const FrontendLayout = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1, color: "#EBDE67" }}
-                className="absolute right-7 text-foreground select-none  px-4 py-2 custom-bg rounded-xl  "
+                className="text-foreground select-none  w-full py-2 custom-bg rounded-xl  "
               >
                 Click For A Live Version
               </motion.button>
@@ -318,10 +322,10 @@ const FrontendLayout = () => {
           </div>
         </motion.div>
 
-        {/* project 7 */}
+        {/* project 2 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
+          className="relative col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl"
         >
           {/* image */}
           <Image
@@ -344,17 +348,17 @@ const FrontendLayout = () => {
             <motion.button
               whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.1, color: "#EBDE67" }}
-              className="absolute bottom-4 text-foreground select-none custom-bg px-4 py-2 rounded-xl  "
+              className="absolute bottom-4 text-foreground select-none custom-bg w-[92%] py-2 rounded-xl  "
             >
               Details
             </motion.button>
           </Link>
         </motion.div>
 
-        {/* project 8 */}
+        {/* project 1 */}
         <motion.div
           variants={divVariant}
-          className="col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl   "
+          className="relative col-span-3 flex flex-col gap-3 text-start hover:scale-105 duration-150 pb-16 animate-rotateBackToFront custom-bg bg-background/20 p-4 rounded-xl   "
         >
           {/* image */}
           <Image
@@ -377,7 +381,7 @@ const FrontendLayout = () => {
             <motion.button
               whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.1, color: "#EBDE67" }}
-              className="absolute bottom-4 text-foreground select-none custom-bg px-4 py-2 rounded-xl  "
+              className="absolute bottom-4 text-foreground select-none custom-bg w-[92%] py-2 rounded-xl  "
             >
               Details
             </motion.button>

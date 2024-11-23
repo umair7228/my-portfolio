@@ -40,6 +40,21 @@ export const projectSections = {
 };
 
 export const dataEngineeringProjects = {
+  eventDrivenArchitecture: {
+    id: 10,
+    name: "Event-Driven Data Pipeline with AWS",
+    description:
+      "Built a real-time data pipeline using AWS services including (S3, SNS, SQS, Lambda) to process events asynchronously, ensuring reliability, scalability, and fault tolerance. The architecture demonstrates an event-driven approach, where events in an S3 bucket trigger a flow through SNS, SQS, and Lambda, with the processed output stored back in S3.",
+    demoLink: "https://github.com/umair7228/event-driven-architecture",
+  },
+  stockMarketPipeline: {
+    id: 9,
+    name: "Real-Time Stock Market Data Pipeline",
+    description:
+      "Built a real-time data pipeline for stock market data. It integrates Apache Kafka for data streaming and multiple AWS services for data storage and querying.",
+    demoLink:
+      "https://github.com/umair7228/stock-market-data-pipeline-with-kafka-and-aws",
+  },
   weatherMapProject: {
     id: 10,
     name: "Weather and S3 Data Integration Pipeline",
@@ -93,7 +108,7 @@ export const dataEngineeringProjects = {
   },
   githubHistoryProject: {
     id: 3,
-    name: "The GitHub History of the Scala Language",
+    name: "GitHub History of Scala Language",
     description:
       "This project leverages real-world repository data to analyze the development trajectory of Scala, highlighting key contributors and significant periods of activity.",
     demoLink:

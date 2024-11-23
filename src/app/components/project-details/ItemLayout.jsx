@@ -16,7 +16,7 @@ const ItemLayout = ({ children }) => {
       }}
       initial="hidden"
       animate="show"
-      className={clsx('relative grid grid-cols-12 gap-10 justify-between px-28 w-full')}
+      className={clsx('relative grid grid-cols-12 gap-4 sm:gap-6 xl:gap-8 2xl:gap-10 justify-between px-6 sm:px-10 lg:px-12 2xl:px-28 w-full')}
     >
       {children}
     </motion.div>

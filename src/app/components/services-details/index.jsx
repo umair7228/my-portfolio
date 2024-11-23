@@ -13,12 +13,12 @@ const ServicesDetails = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-center font-bold font-serif text-accent select-none mt-11 xs:mt-10 md:mt-20">
+      className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-center font-bold font-serif text-accent select-none mt-11 xs:mt-10 md:mt-20 tracking-widest">
         Transforming Ideas into Solutions with Expertise and Innovation
       </motion.div>
 
       <div className="relative flex flex-col lg:grid lg:grid-cols-2 gap-7 md:gap-12 2xl:gap-24 2xl:px-24 ">
-        <div className="flex flex-col gap-3 text-start xs:animate-slide-right lg:animate-slide-down custom-bg p-4 rounded-xl ">
+        <div className="flex flex-col gap-3 text-start animate-slide-right lg:animate-slide-down custom-bg p-4 rounded-xl ">
           {/* image */}
           <Image
             src={dataEngineering}
@@ -26,10 +26,10 @@ const ServicesDetails = () => {
             className="w-full object-cover object-center rounded-xl select-none pointer-events-none"
           />
 
-          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground select-none pointer-events-none">
+          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground select-none pointer-events-none tracking-wider">
             Cloud Data Engineering
           </h2>
-          <p className="text-sm md:text-[1rem] text-muted select-none pointer-events-none">
+          <p className="text-sm md:text-[1rem] text-muted select-none pointer-events-none tracking-wider">
             Designing and building scalable data pipelines to seamlessly ingest,
             process, and transform data across cloud platforms like AWS and
             Snowflake. My expertise lies in Python, SQL, Apache Airflow, and
@@ -41,7 +41,7 @@ const ServicesDetails = () => {
             <motion.button
               whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.1, color: "#EBDE67" }} 
-              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 xs:mt-5 md:mt-6 text-foreground select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
+              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 xs:mt-5 md:mt-6 text-foreground tracking-wider select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
                 Hire Me
               </motion.button>
             </Link>
@@ -50,14 +50,14 @@ const ServicesDetails = () => {
             <motion.button
               whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.1, color: "#EBDE67" }} 
-              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 lg:right-10 xs:mt-5 md:mt-6 text-foreground select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
+              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 lg:right-10 xs:mt-5 md:mt-6 text-foreground tracking-wider select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
                 See My Projects
               </motion.button>
             </Link>
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 text-start xs:animate-slide-left lg:animate-slide-up custom-bg p-4 rounded-xl lg:h-[580px] xl:h-[600px] ">
+        <div className="flex flex-col gap-3 text-start animate-slide-left lg:animate-slide-up custom-bg p-4 rounded-xl lg:h-[580px] xl:h-[600px] ">
           {/* image */}
           <Image
             src={frontend}
@@ -65,10 +65,10 @@ const ServicesDetails = () => {
             className="w-full rounded-xl object-cover select-none pointer-events-none"
           />
 
-          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground select-none pointer-events-none">
+          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground select-none pointer-events-none tracking-wider">
             Frontend Development
           </h2>
-          <p className="text-sm md:text-[1rem] text-muted select-none pointer-events-none">
+          <p className="text-sm md:text-[1rem] text-muted select-none pointer-events-none tracking-wider">
             Creating intuitive, responsive, and dynamic user interfaces with
             modern tools like React.js, Next.js, TypeScript, and Tailwind CSS. I
             focus on crafting user-centric web experiences with clean code and
@@ -79,7 +79,7 @@ const ServicesDetails = () => {
             <motion.button
               whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.1, color: "#EBDE67" }} 
-              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 xs:mt-5 md:mt-6 text-foreground select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
+              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 xs:mt-5 md:mt-6 text-foreground tracking-wider select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
                 Hire Me
               </motion.button>
             </Link>
@@ -88,7 +88,7 @@ const ServicesDetails = () => {
             <motion.button
               whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.1, color: "#EBDE67" }} 
-              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 lg:right-10 xs:mt-5 md:mt-6 text-foreground select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
+              className="text-xs md:text-lg lg:text-[15px] lg:absolute lg:bottom-5 lg:right-10 xs:mt-5 md:mt-6 tracking-wider text-foreground select-none border border-solid border-accent/30 px-4 py-2 backdrop:blur-[6px] rounded-xl shadow-glass-inset hover:shadow-glass-sm">
                 See My Projects
               </motion.button>
             </Link>

@@ -68,7 +68,7 @@ const NavButton = () => {
           </Link>
           <Link href={"/services"}>
             <Button className="flex gap-1 lg:text-sm items-center hover:scale-105 duration-150 active:scale-95 tracking-wider xl:py-1">
-              <GrServices className="w-5" />
+              <GrServices className="w-5 h-[24px]" />
               Services
             </Button>
           </Link>
