@@ -40,6 +40,27 @@ export const projectSections = {
 };
 
 export const dataEngineeringProjects = {
+  COVIDDataPipeline: {
+    id: 10,
+    name: "Pandemic Insights: ETL Pipeline with AWS Glue, Athena & Redshift",
+    description:
+      "Developed a scalable ETL pipeline using AWS Glue, Athena, and Redshift to process and analyze COVID-19 data from multiple sources. Designed fact and dimension tables, optimized data queries, and loaded the results into Redshift for data-driven insights.",
+    demoLink: "https://github.com/umair7228/COVID-Data-Pipeline",
+  },
+  serverlessDataLake: {
+    id: 10,
+    name: "Serverless Data Lake Architecture on AWS",
+    description:
+      "A fully automated serverless data lake solution using AWS services to ingest, process, and notify users about data transformations. This architecture leverages S3, Lambda, Glue Crawlers and Jobs, CloudWatch, and SNS to streamline ETL processes and deliver scalable data insights.",
+    demoLink: "https://github.com/umair7228/Serverless-Data-Lake-Architecture",
+  },
+  dataflowInsights: {
+    id: 10,
+    name: "Dataflow Insights",
+    description:
+      "DataFlow Insights is an automated data pipeline project that pushes daily data to Amazon S3, uses AWS Glue to catalog it, and Amazon Athena to query it. Finally, the data is visualized in Amazon QuickSight, creating a streamlined process for insightful data analysis and visualization.",
+    demoLink: "https://github.com/umair7228/DataFlow-Insights",
+  },
   eventDrivenArchitecture: {
     id: 10,
     name: "Event-Driven Data Pipeline with AWS",
@@ -157,7 +178,7 @@ export const frontendProjects = {
     id: 8,
     name: "Personal Finance Dashboard",
     description:
-      "This is a static frontend dashboard created using Next.js, showcasing a user interface for managing bank cards, viewing transactions, and displaying financial summaries without any backend functionality.",
+      "This is a static frontend dashboard created using Next.js, showcasing a user interface for managing bank cards, viewing transactions, and displaying financial summaries.",
     demoLink: "https://github.com/umair7228/nextjs-dashboard-app",
   },
   amazonProject: {
@@ -178,7 +199,7 @@ export const frontendProjects = {
     id: 5,
     name: "Editable Resume Builder",
     description:
-      "A customizable resume builder created using modern web technologies, allowing users to input their details and generate professional resumes quickly and easily.",
+      "A customizable resume builder created using modern web technologies, allowing users to input their details and generate a resumes easily.",
     demoLink: "https://github.com/umair7228/editable-resume-builder",
   },
   todoList: {

@@ -17,6 +17,9 @@ import androidApp from "../../../../../public/projects-images/data-analysis-imag
 import weatherMap from "../../../../../public/projects-images/data-engineering-images/weatherMap.png";
 import stockMarket from "../../../../../public/projects-images/data-engineering-images/stock-market-data-pipeline.png";
 import eventDriven from "../../../../../public/projects-images/data-engineering-images/event-driven-pipeline.png";
+import dataflowInsights from "../../../../../public/projects-images/data-engineering-images/dataflow-Insights.png";
+import serverlessDataLake from "../../../../../public/projects-images/data-engineering-images/serverlessDataLake.png";
+import COVIDPipeline from "../../../../../public/projects-images/data-engineering-images/COVID-Data-Pipeline.png";
 
 const divVariant = {
   hidden: { opacity: 0 },
@@ -34,6 +37,105 @@ const ProjectLayout = () => {
 
       {/* boxes */}
       <ItemLayout>
+
+        {/* project 15 */}
+        <motion.div
+          variants={divVariant}
+          className="col-span-12 md:col-span-6 xl:col-span-4 pb-16 hover:scale-105 duration-150 flex flex-col gap-3 text-start p-4 rounded-xl custom-bg"
+        >
+          {/* image */}
+          <Image
+            src={COVIDPipeline}
+            alt="COVID Data Pipeline Architecture Diagram"
+            className="w-full h-[50%] sm:h-[60%] md:h-[50%] lg:h-[55%] 2xl:h-[55%] object-fill rounded-xl object-center select-none pointer-events-none"
+          />
+
+          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground tracking-wider select-none pointer-events-none">
+            {dataEngineeringProjects.COVIDDataPipeline.name}
+          </h2>
+          <p className="text-sm md:text-[1rem] text-muted tracking-wider select-none pointer-events-none">
+            {dataEngineeringProjects.COVIDDataPipeline.description}
+          </p>
+          <Link
+            href={dataEngineeringProjects.COVIDDataPipeline.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.button
+              whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.1, color: "#EBDE67" }}
+              className="text-xs md:text-lg lg:text-[15px] absolute bottom-5 text-foreground select-none custom-bg px-4 py-2 rounded-xl"
+            >
+              Details
+            </motion.button>
+          </Link>
+        </motion.div>
+
+        {/* project 14 */}
+        <motion.div
+          variants={divVariant}
+          className="col-span-12 md:col-span-6 xl:col-span-4 pb-16 hover:scale-105 duration-150 flex flex-col gap-3 text-start p-4 rounded-xl custom-bg"
+        >
+          {/* image */}
+          <Image
+            src={serverlessDataLake}
+            alt="Serverless Data Lake Architecture Diagram"
+            className="w-full h-[50%] sm:h-[60%] md:h-[50%] lg:h-[55%] 2xl:h-[55%] object-fill rounded-xl object-center select-none pointer-events-none"
+          />
+
+          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground tracking-wider select-none pointer-events-none">
+            {dataEngineeringProjects.serverlessDataLake.name}
+          </h2>
+          <p className="text-sm md:text-[1rem] text-muted tracking-wider select-none pointer-events-none">
+            {dataEngineeringProjects.serverlessDataLake.description}
+          </p>
+          <Link
+            href={dataEngineeringProjects.serverlessDataLake.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.button
+              whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.1, color: "#EBDE67" }}
+              className="text-xs md:text-lg lg:text-[15px] absolute bottom-5 text-foreground select-none custom-bg px-4 py-2 rounded-xl"
+            >
+              Details
+            </motion.button>
+          </Link>
+        </motion.div>
+
+        {/* project 13 */}
+        <motion.div
+          variants={divVariant}
+          className="col-span-12 md:col-span-6 xl:col-span-4 pb-16 hover:scale-105 duration-150 flex flex-col gap-3 text-start p-4 rounded-xl custom-bg"
+        >
+          {/* image */}
+          <Image
+            src={dataflowInsights}
+            alt="DataFlow Insights Diagram"
+            className="w-full h-[50%] sm:h-[60%] md:h-[50%] lg:h-[55%] 2xl:h-[55%] object-fill rounded-xl object-center select-none pointer-events-none"
+          />
+
+          <h2 className="text-lg md:text-xl 2xl:text-2xl text-foreground tracking-wider select-none pointer-events-none">
+            {dataEngineeringProjects.dataflowInsights.name}
+          </h2>
+          <p className="text-sm md:text-[1rem] text-muted tracking-wider select-none pointer-events-none">
+            {dataEngineeringProjects.dataflowInsights.description}
+          </p>
+          <Link
+            href={dataEngineeringProjects.dataflowInsights.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.button
+              whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.1, color: "#EBDE67" }}
+              className="text-xs md:text-lg lg:text-[15px] absolute bottom-5 text-foreground select-none custom-bg px-4 py-2 rounded-xl"
+            >
+              Details
+            </motion.button>
+          </Link>
+        </motion.div>
 
         {/* project 12 */}
         <motion.div

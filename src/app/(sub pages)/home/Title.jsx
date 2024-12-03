@@ -32,7 +32,7 @@ const Title = ({ triggerAnimation }) => {
           <motion.span 
             key={i} 
             variants={charVariants} 
-            transition={{ duration: 0.2, delay: i * 0.07}} // Add staggered delay here for each character
+            transition={{ duration: 0.1, delay: i * 0.05}} // Add staggered delay here for each character
           >
             {char}
           </motion.span>
@@ -49,7 +49,7 @@ const Title = ({ triggerAnimation }) => {
           <motion.span 
             key={i} 
             variants={charVariants} 
-            transition={{ duration: 0.2, delay: i * 0.05 + 1 }} // Adjust delay here for h2
+            transition={{ duration: 0.1, delay: i * 0.03 + 1 }} // Adjust delay here for h2
           >
             {char}
           </motion.span>
@@ -66,7 +66,7 @@ const Title = ({ triggerAnimation }) => {
           <motion.span 
             key={i} 
             variants={charVariants} 
-            transition={{ duration: 0.2, delay: i * 0.05 + 2 }} // Adjust delay here for h3
+            transition={{ duration: 0.1, delay: i * 0.03 + 2 }} // Adjust delay here for h3
           >
             {char}
           </motion.span>

@@ -11,7 +11,6 @@ export default function About() {
       <Image
         src={bg}
         priority
-        sizes="100vw"
         alt="Next.js Portfolio website's about page background image"
         className="fixed w-full h-full object-cover object-center -z-50 select-none opacity-40"
       />
