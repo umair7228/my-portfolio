@@ -9,7 +9,7 @@ const Services = () => {
       <Image
         src={bg}
         alt="Next.js Portfolio website's certification background image"
-        className="fixed w-full h-full object-cover object-center -z-50 select-none opacity-50"
+        className="fixed w-full h-full object-cover object-center -z-50 select-none opacity-40 blur-md"
       /> 
 
     <ServicesDetails />

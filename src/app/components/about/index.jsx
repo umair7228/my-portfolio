@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import umai2 from "../../../../public/home-image/umair-gray.png";
+import umair2 from "../../../../public/home-image/umair-gray.png";
 import React from "react";
 import {
   FaAws,
@@ -8,6 +8,7 @@ import {
   FaGitAlt,
   FaGithub,
   FaDiscord,
+  FaDocker,
 } from "react-icons/fa6";
 import { TbBrandSnowflake } from "react-icons/tb";
 import {
@@ -27,8 +28,8 @@ import Image from "next/image";
 
 const AboutDetails = () => {
   return (
-    <section className=" w-full flex flex-col gap-12 pb-12 pt-10 px-4 xs:px-6 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-24">
-      <div className="flex flex-col gap-14 w-full h-screen items-center justify-center text-center">
+    <section className=" w-full flex flex-col items-center  justify-center gap-12 pb-12 pt-10 px-4 xs:px-6 sm:px-8 md:px-12 lg:px-16 xl:px-16 2xl:px-24">
+      <div className="flex flex-col gap-14 w-full max-w-screen-2xl min-h-screen items-center justify-center text-center">
         {/* Image div  */}
         <motion.div
           initial={{ scale: 0 }}
@@ -38,7 +39,7 @@ const AboutDetails = () => {
           className="w-[60%] sm:w-[50%] md:w-[40%] lg:w-[30%]"
         >
           <Image
-            src={umai2}
+            src={umair2}
             alt="Umair Image"
             className="shadow-glass-sm rounded-full backdrop-blur-[6px]"
           />
@@ -61,7 +62,7 @@ const AboutDetails = () => {
       </div>
 
       {/* Architect text  */}
-      <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
+      <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full max-w-screen-2xl">
         <AnimateLayout
           className={
             "col-span-full xl:col-span-8 row-span-2 flex flex-col items-start"
@@ -164,6 +165,9 @@ const AboutDetails = () => {
             </div>
             <div className="bg-slate-700 p-2 md:p-3 rounded-2xl">
               <SiApacheairflow className=" w-8 h-8 xs:w-10 xs:h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16  " />
+            </div>
+            <div className="bg-slate-700 p-2 md:p-3 rounded-2xl">
+              <FaDocker className=" w-8 h-8 xs:w-10 xs:h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16  " />
             </div>
             <div className="bg-slate-700 p-2 md:p-3 rounded-2xl">
               <RiNextjsFill className=" w-8 h-8 xs:w-10 xs:h-10 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16  " />

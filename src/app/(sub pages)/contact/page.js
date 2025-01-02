@@ -10,15 +10,15 @@ export default function Contact() {
         alt="Next.js Portfolio website's contact page background image"
         priority
         sizes="100vw"
-        className="fixed top-0 left-0 w-full h-full object-cover object-center -z-50 select-none opacity-50"
+        className="fixed top-0 left-0 w-full h-full object-cover object-center -z-50 select-none opacity-40 blur-lg"
       />
 
-      <article className=" w-full flex flex-col items-center justify-center space-y-8 pb-8 pt-24 lg:pt-32 2xl:pt-40">
+      <article className=" w-full max-w-screen-2xl flex flex-col items-center justify-center space-y-8 pb-8 pt-24 lg:pt-32 2xl:pt-40">
         <div className="flex flex-col items-center justify-center space-y-2 sm:space-y-4 sm:px-16 md:px-20 lg:px-24 xl:px-60 2xl:px-80">
           <h1 className="text-accent font-semibold text-center text-xl md:text-3xl lg:text-4xl capitalize">
             Let&#39;s Build Something Extraordinary!
           </h1>
-          <p className=" text-center text-xs md:text-md font-light">
+          <p className=" text-center text-xs md:text-base font-light">
             Have a project in mind? Need an expert in frontend development,
             cloud engineering, or data workflows? I&#39;m always excited to connect
             with like-minded individuals and collaborate on innovative ideas.

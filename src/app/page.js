@@ -10,8 +10,7 @@ export default function Home() {
       <Image
         src={bg}
         alt="background-image"
-        fill
-        className="w-full h-full object-cover object-center opacity-50"
+        className="fixed w-full h-full object-cover object-center opacity-40 blur-md"
         /> 
         <HomePage /> 
     </main>

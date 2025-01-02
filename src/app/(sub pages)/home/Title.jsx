@@ -1,76 +1,35 @@
-"use client";
+
 import { motion } from "framer-motion";
 
-const animationText = (text) => [...text];
-
-const charVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
-};
-
-const headingVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-  },
-};
-
-const Title = ({ triggerAnimation }) => {
-  const fHeading = "Cloud Data Engineer";
-  const sHeading = "& Frontend Developer";
-  const tHeading = "for Modern Solutions";
+const Title = () => {
 
   return (
     <div>
       <motion.h1
-        variants={headingVariants}
-        initial="hidden"
-        animate={triggerAnimation ? "visible" : "hidden"}
-        className="text-[6.5vw] sm:text-[6.5vw] md:text-[5.5vw] sm:mt-6 md:mt-3 lg:text-[3.5vw] xl:text-[3.5vw] 2xl:text-[3.5vw] font-[font5] tracking-wide bg-gradient-to-l from-gray-100 to-cyan-300 bg-clip-text text-transparent uppercase"
+        initial={{opacity: 0, x: -200}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 0.6, delay: 0.3, ease: 'circOut'}}
+        className=" text-[1.7rem] sm:text-[2.5rem] md:text-[3.2rem] sm:mt-6 md:mt-3 lg:text-[2.7rem] xl:text-[3.5rem] 2xl:text-[4.1rem] font-[font5] tracking-wide bg-gradient-to-l from-gray-100 to-cyan-300 bg-clip-text text-transparent uppercase"
       >
-        {animationText(fHeading).map((char, i) => (
-          <motion.span 
-            key={i} 
-            variants={charVariants} 
-            transition={{ duration: 0.1, delay: i * 0.05}} // Add staggered delay here for each character
-          >
-            {char}
-          </motion.span>
-        ))}
+        Cloud Data Engineer
       </motion.h1>
 
       <motion.h2
-        variants={headingVariants}
-        initial="hidden"
-        animate={triggerAnimation ? "visible" : "hidden"}
-        className="text-[6vw] sm:text-[6vw] md:text-[5vw] lg:text-[3.5vw] xl:text-[3.5vw] 2xl:text-[3.2vw] font-[font5] tracking-wide bg-gradient-to-r from-gray-100 to-gray-400 bg-clip-text text-transparent uppercase"
+        initial={{opacity: 0, x: -200}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 0.6, delay: 0.7, ease: 'circOut'}}
+        className="text-[1.5rem] sm:text-[2.3rem] md:text-[2.9rem] lg:text-[2.5rem] xl:text-[3.2rem] 2xl:text-[3.8rem] font-[font5] tracking-wide bg-gradient-to-r from-gray-100 to-gray-400 bg-clip-text text-transparent uppercase"
       >
-        {animationText(sHeading).map((char, i) => (
-          <motion.span 
-            key={i} 
-            variants={charVariants} 
-            transition={{ duration: 0.1, delay: i * 0.03 + 1 }} // Adjust delay here for h2
-          >
-            {char}
-          </motion.span>
-        ))}
+        & Frontend Developer
       </motion.h2>
 
       <motion.h3
-        variants={headingVariants}
-        initial="hidden"
-        animate={triggerAnimation ? "visible" : "hidden"}
-        className="text-[5vw] sm:text-[5vw] md:text-[4vw] lg:text-[2.8vw] xl:text-[2.8vw] 2xl:text-[2.5vw] font-[font4] tracking-wide text-[#00d9c0] uppercase"
+        initial={{opacity: 0, x: -200}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 0.6, delay: 1, ease: 'circOut'}}
+        className="text-[1.3rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.8vw] xl:text-[3vw] 2xl:text-[3rem] font-[font4] tracking-wide text-[#00d9c0] uppercase"
       >
-        {animationText(tHeading).map((char, i) => (
-          <motion.span 
-            key={i} 
-            variants={charVariants} 
-            transition={{ duration: 0.1, delay: i * 0.03 + 2 }} // Adjust delay here for h3
-          >
-            {char}
-          </motion.span>
-        ))}
+        for Modern Solutions
       </motion.h3>
     </div>
   );

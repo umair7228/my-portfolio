@@ -6,13 +6,19 @@ import { useState } from "react";
 
 const Buttons = ({ triggerAnimation }) => {
 
-  const [isHovered, setIsHovered] = useState(false);
+  let [isHovered, setIsHovered] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
 
   return (
     <>
       {/* Buttons Section */}
-      <div
-        className={`flex flex-col gap-5 mt-12 sm:mt-16 md:mt-8 lg:mt-12 xl:mt-24 2xl:mt-16 ${
+      <motion.div
+        initial={{opacity: 0, y: 100}}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+        className={`flex flex-col gap-5 mt-12 sm:mt-16 md:mt-8 lg:mt-12 xl:mt-24 2xl:mt-16 max-w-screen-2xl ${
           triggerAnimation ? "opacity-100" : "opacity-0"
         } transition-opacity duration-700`}
       >
@@ -40,14 +46,21 @@ const Buttons = ({ triggerAnimation }) => {
           </Link>
 
           {/* Resume Dropdown */}
-          <div className="relative group" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-            <Button className="text-xs sm:text-base flex justify-center items-center gap-1 sm:gap-2 rounded-xl xs:rounded-[0.50rem] sm:rounded-xl py-1 sm:py-2 px-1 xs:px-2 sm:px-4 tracking-wider mb-2">
+          <div
+            className="relative group lg:hover:block"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Button
+              onClick={toggleDropdown}
+              className="text-xs sm:text-base flex justify-center items-center gap-1 sm:gap-2 rounded-xl xs:rounded-[0.50rem] sm:rounded-xl py-1 sm:py-2 px-1 xs:px-2 sm:px-4 tracking-wider mb-2"
+            >
               <Notebook className="w-4 sm:w-6" />
               Resume
               <ChevronDown className="w-4 sm:w-6" />
             </Button>
 
-            {isHovered && (
+            {(isHovered || isDropdownOpen) && (
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -55,11 +68,23 @@ const Buttons = ({ triggerAnimation }) => {
                 transition={{ duration: 0.3 }}
                 className="absolute right-0 sm:right-auto flex flex-col custom-bg shadow-lg gap-1 sm:gap-3 items-center justify-center rounded-xl py-2 px-2 sm:px-3 z-10"
               >
-                <Link href="/resumes/data-engineering-resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <button className="text-xs lg:text-sm hover:text-accent bg-none border-b border-zinc-400 pb-1 sm:custom-bg sm:py-2 sm:rounded-xl w-[32vw] sm:w-[25vw] md:w-[23vw] lg:w-[18vw] xl:w-[14vw] 2xl:w-[10vw]">Data Engineering CV</button>
+                <Link
+                  href="/resumes/data-engineering-resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-xs lg:text-sm hover:text-accent bg-none border-b border-zinc-400 pb-1 sm:custom-bg sm:py-2 sm:rounded-xl w-[32vw] sm:w-[25vw] md:w-[23vw] lg:w-[18vw] xl:w-[14vw] 2xl:w-[10vw]">
+                    Data Engineering CV
+                  </button>
                 </Link>
-                <Link href="/resumes/frontend-resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <button className="text-xs lg:text-sm hover:text-accent bg-none sm:custom-bg  sm:py-2 sm:rounded-xl w-[32vw] sm:w-[25vw] md:w-[23vw] lg:w-[18vw] xl:w-[14vw] 2xl:w-[10vw]">Frontend CV</button>
+                <Link
+                  href="/resumes/frontend-resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-xs lg:text-sm hover:text-accent bg-none sm:custom-bg sm:py-2 sm:rounded-xl w-[32vw] sm:w-[25vw] md:w-[23vw] lg:w-[18vw] xl:w-[14vw] 2xl:w-[10vw]">
+                    Frontend CV
+                  </button>
                 </Link>
               </motion.div>
             )}
@@ -82,7 +107,7 @@ const Buttons = ({ triggerAnimation }) => {
             Who I Am
           </motion.button>
         </Link>
-      </div>
+      </motion.div>
     </>
   );
 };

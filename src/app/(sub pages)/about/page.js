@@ -12,7 +12,7 @@ export default function About() {
         src={bg}
         priority
         alt="Next.js Portfolio website's about page background image"
-        className="fixed w-full h-full object-cover object-center -z-50 select-none opacity-40"
+        className="fixed w-full h-full object-cover object-center -z-50 select-none opacity-40 blur-md"
       />
 
       <AboutDetails />

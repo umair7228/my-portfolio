@@ -1,27 +1,27 @@
 "use client"
 import Image from "next/image";
 import React from "react";
-import dataEngineering from "../../../../public/section-images/data-engineering.png";
-import frontend from "../../../../public/section-images/frontend-development.jpg";
-import { projectSections } from "@/app/data";
 import Link from "next/link";
 import {motion} from 'framer-motion'
+import { projectSections } from "../../../../data/projectSection";
 
 const SectionLayout = () => {
   
   return (
-    <section className="flex flex-col w-full min-h-screen items-center justify-center gap-10 py-10 sm:py-16 lg:py-20 ">
+    <section className="flex flex-col w-full min-h-screen items-center justify-center gap-10 py-10 sm:py-16 lg:py-20 max-w-screen-2xl">
       <div className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-bold font-serif text-accent select-none mt-14 sm:mt-8 tracking-widest">
         Projects Page
       </div>
       
-      <div className="relative grid lg:grid-cols-2 gap-10  sm:gap-14 lg:gap-16 xl:gap-24 overflow-hidden px-8 sm:px-20 md:px-28 lg:px-16 xl:px-24 w-full 2xl:max-w-[75%]">
+      <div className="relative grid lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-16 xl:gap-20 overflow-hidden px-8 sm:px-20 md:px-28 lg:px-16 xl:px-6 w-full 2xl:max-w-[75%]">
 
         <div className="relative pb-16 flex flex-col gap-3 text-start animate-slide-right lg:animate-slide-down custom-bg p-4 rounded-xl">
           {/* image */}
           <Image
-            src={dataEngineering}
+            src={projectSections.engineering.image}
             alt="Data Engineering"
+            width={400}
+            height={300}
             className="w-full object-cover object-center rounded-xl select-none pointer-events-none"
           />
 
@@ -45,8 +45,10 @@ const SectionLayout = () => {
         <div className="relative pb-16 flex flex-col gap-3 text-start animate-slide-left lg:animate-slide-up custom-bg p-4 rounded-xl">
           {/* image */}
           <Image
-            src={frontend}
+            src={projectSections.frontend.image}
             alt="Frontend"
+            width={400}
+            height={300}
             className="w-full object-cover select-none rounded-xl pointer-events-none"
           />
 

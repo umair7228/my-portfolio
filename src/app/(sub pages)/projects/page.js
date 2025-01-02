@@ -8,7 +8,7 @@ export default function Projects() {
         src={bg}
         alt="background-image"
         fill
-        className="fixed max-w-full-2xl h-full object-cover object-center -z-50 select-none opacity-50"
+        className="fixed max-w-full-2xl h-full object-cover object-center -z-50 select-none opacity-40 blur-md"
         />
         
         <SectionLayout />

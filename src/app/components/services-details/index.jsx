@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 
 const ServicesDetails = () => {
   return (
-    <section className="flex flex-col h-full overflow-x-hidden lg:overflow-y-hidden justify-center w-full items-center px-6 py-14 sm:px-20 md:px-28 lg:px-12 xl:px-36 gap-8 2xl:gap-16">
+    <section className="flex flex-col h-full overflow-x-hidden lg:overflow-y-hidden justify-center w-full max-w-screen-2xl items-center px-6 py-14 sm:px-20 md:px-28 lg:px-12 xl:px-36 gap-8 2xl:gap-16">
       <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
