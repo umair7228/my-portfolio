@@ -1,5 +1,13 @@
 export const dataEngineeringProjects = [
   {
+    id: 17,
+    name: "Data Sweeper",
+    description:
+      "A Streamlit-based web app for seamless data cleaning and visualization. Upload CSV/Excel, remove duplicates, fill missing values, visualize data, and convert formats effortlessly.",
+    demoLink: "https://github.com/umair7228/ASAP-Streamlit-App",
+    image: "/projects-images/data-engineering-images/data-sweeper.png",
+  },
+  {
     id: 16,
     name: "Spotify Data ETL Pipeline",
     description:

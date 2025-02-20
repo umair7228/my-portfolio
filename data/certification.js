@@ -120,6 +120,30 @@ export const certificates = [
         alt: "Understanding-Cloud-Computing Certificate"
     },
     {
+        id: 33,
+        title: "Cleaning Data In Python",
+        organization: "DataCamp",
+        date: "JAN-17-2025",
+        image: "/certificates-images/Cleaning-Data-in-Python.png",
+        alt: "Cleaning Data In Python"
+    },
+    {
+        id: 32,
+        title: "Importing Data In Python",
+        organization: "DataCamp",
+        date: "DEC-19-2024",
+        image: "/certificates-images/Intermediate-Importing-Data-in-Python.png",
+        alt: "Importing Data In Python Certificate"
+    },
+    {
+        id: 31,
+        title: "Advance Python For Developers",
+        organization: "DataCamp",
+        date: "DEC-05-2024",
+        image: "/certificates-images/Intermediate-Python-for-Developers.png",
+        alt: "Intermediate-Python-for-Developers Certificate"
+    },
+    {
         id: 15,
         title: "Python For Developers",
         organization: "DataCamp",
