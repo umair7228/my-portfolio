@@ -1,5 +1,13 @@
 export const dataEngineeringProjects = [
   {
+    id: 18,
+    name: "Data Warehousing for an Online Learning Platform",
+    description:
+      "An automated ETL pipeline using PySpark, Airflow, and Snowflake to transform and load course data from CSV to a data warehouse for visualization in Power BI.",
+    demoLink: "https://github.com/umair7228/Data-Warehouseing-for-an-Online-Learning-Platform",
+    image: "/projects-images/data-engineering-images/e-learning-data-warehousing.png",
+  },
+  {
     id: 17,
     name: "Data Sweeper",
     description:
